@@ -15,10 +15,14 @@ public class Task1 {
 				  Thread.sleep(2000);
 				  //enter into the dws page
 				  driver.get("https://demowebshop.tricentis.com/");
-				  
-				  String expectedTitle = "https://demowebshop.tricentis.com/"; 
+
+			        // Expected title of the page
+			        String expectedTitle = "Demo Web Shop";
+
+			        // Get the actual title of the page
 			        String actualTitle = driver.getTitle();
 
+			        // Verify the page title
 			        if (actualTitle.equals(expectedTitle)) {
 			            System.out.println("Page title is verified: " + actualTitle);
 			        } else {
