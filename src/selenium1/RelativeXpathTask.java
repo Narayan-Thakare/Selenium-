@@ -50,12 +50,15 @@ public class RelativeXpathTask {
 						  
 						  Thread.sleep(1000);
 
+						  //////////////////////////////////////  here i clear the quantity
 						  WebElement qtyInput = driver.findElement(By.xpath("//input[@class='qty-input']"));
 
 						qtyInput.clear();
 
 						
-						qtyInput.sendKeys("2");		
+						qtyInput.sendKeys("2");	
+						
+						
 						Thread.sleep(1000);
 
 						  driver.findElement(By.xpath("//input[@id='add-to-cart-button-2']")).click();
@@ -67,23 +70,23 @@ public class RelativeXpathTask {
 							Thread.sleep(1000);
 
 						  driver.findElement(By.xpath("//input[@type='checkbox']")).click();
-							Thread.sleep(1000);
+							Thread.sleep(2000);
 
 						  driver.findElement(By.xpath("//input[@name='updatecart']")).click();
 
 						  
 						/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-							Thread.sleep(1000);
+							Thread.sleep(2000);
 
 						 
 						  driver.findElement(By.xpath("//img[@alt='Tricentis Demo Web Shop']")).click();
 
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-							Thread.sleep(1000);
+							Thread.sleep(2000);
 
 						  driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[2]/ul[1]/li[5]/a")).click();
 
-							Thread.sleep(1000);
+							Thread.sleep(2000);
 
 							
 							 WebElement logo = driver.findElement(By.xpath("//div[@class='header-logo']/a"));
@@ -93,28 +96,28 @@ public class RelativeXpathTask {
 						            System.out.println("Web element verification failed: Logo is not displayed.");
 						        }
 						        
-								Thread.sleep(1000);
+								Thread.sleep(2000);
 
 						  driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[3]/div[1]/div/div[2]/div[3]/div[2]/input")).click();
-							Thread.sleep(1000);
+							Thread.sleep(2000);
 
 						  driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[3]/div[2]/div/div[2]/div[3]/div[2]/input")).click();
-							Thread.sleep(1000);
+							Thread.sleep(2000);
 
 						  driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[3]/div[3]/div/div[2]/div[3]/div[2]/input")).click();
-							Thread.sleep(1000);
+							Thread.sleep(2000);
 
 						  driver.findElement(By.xpath("//span[@class='cart-label']")).click();
-							Thread.sleep(1000);
+							Thread.sleep(2000);
 
 						  driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div/form/table/tbody/tr[1]/td[1]/input")).click();
-							Thread.sleep(1000);
+							Thread.sleep(2000);
 							
 							 driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div/form/table/tbody/tr[2]/td[1]/input")).click();
-								Thread.sleep(1000);
+								Thread.sleep(2000);
 								
 								 driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div/form/table/tbody/tr[3]/td[1]/input")).click();
-									Thread.sleep(1000);
+									Thread.sleep(2000);
 							
 							
 							
