@@ -31,7 +31,7 @@ public class DependentAndIndipendentXpath {
 			
 				String text2nd = album_2rd.getText();
 
-				System.out.println(text2nd);
+				System.out.println(text2nd);  
 				
 				 Thread.sleep(2000);
 					WebElement album_1st	=  driver.findElement(By.xpath("//a[text()='Music 2']/../following-sibling::div[2]/div/span"));
