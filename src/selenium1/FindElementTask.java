@@ -1,5 +1,6 @@
 package selenium1;
 
+import java.sql.Driver;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -22,17 +23,58 @@ public class FindElementTask {
 
 				  
 				  
+				  ///////////////////////////////////////////////////////////////////////////////////////////
+				  
+				  
+				  
+				//  List<WebElement> followUs = driver.findElements(By.xpath("//div[@class = 'column follow-us']/ul/li/a"));
 
-				 
-				 
-				  List<WebElement> comunityPoll = driver.findElements(By.xpath("//ul/li/a[@target='_blank']"));
+			  
+//				  List<WebElement> followUs = driver.findElements(By.xpath("//ul/li/a[@target='_blank']"));
+//
+//					 for(WebElement web : followUs) {
+//						 
+//						 web.click();
+//						 Thread.sleep(3000);
+//						
+//					// driver.navigate().back();
+//					 Thread.sleep(3000);
+//
+//					 }
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  ////////////////////////////////////////////////////////////////////////////////
+				  
 
-				 for(WebElement web : comunityPoll) {
+				  
+				 
+				  List<WebElement> followUs = driver.findElements(By.xpath("//div[@class = 'column follow-us']/ul/li/a"));
+
+				  
+				//  List<WebElement> followUs = driver.findElements(By.xpath("//ul/li/a[@target='_blank']"));
+
+				 for(WebElement web : followUs) {
 					 
 					 web.click();
 					 Thread.sleep(3000);
+					 
+					 String  VerifyUrl = "https://demowebshop.tricentis.com/news/rss/1";
+					 
+					 if (VerifyUrl.equals(driver.getCurrentUrl())) {
+						 driver.navigate().back();
+					 }
 
-				 driver.navigate().back();
+				// driver.navigate().back();
 				 Thread.sleep(3000);
 
 				 }
