@@ -24,6 +24,7 @@ WebElement	elementToHover = driver.findElement(By.xpath("//a[@data-group='men']"
 
 act.moveToElement(elementToHover).perform();
 
+
 Thread.sleep(2000);
 
 WebElement	clickJacket = driver.findElement(By.xpath("//a[text()='Jackets']"));
