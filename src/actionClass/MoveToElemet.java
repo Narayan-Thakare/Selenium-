@@ -10,7 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import selenium1.ID;
 
-public class Task1 {
+public class MoveToElemet {
 
 	public static void main(String[] args) throws InterruptedException {
 		
