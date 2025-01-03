@@ -20,6 +20,8 @@ public class OpenTheProductInDifferentTab {
 		
 WebElement	books =	driver.findElement(By.xpath("//a[contains(text(),'Books')]"));
 act.keyDown(Keys.CONTROL).click(books).perform();
+
+
 		
 		
 	}
