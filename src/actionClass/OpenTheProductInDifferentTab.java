@@ -1,11 +1,12 @@
 package actionClass;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class SendKeysWithTwoArgument {
+public class OpenTheProductInDifferentTab {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
@@ -17,8 +18,10 @@ public class SendKeysWithTwoArgument {
 		Thread.sleep(2000);
 		Actions act = new Actions (driver);
 		
-WebElement	search_Field =	driver.findElement(By.cssSelector(".search-box-text.ui-autocomplete-input"));
-		act.sendKeys(search_Field,"Sun glasses").perform();
+WebElement	books =	driver.findElement(By.xpath("//a[contains(text(),'Books')]"));
+act.keyDown(Keys.CONTROL).click(books).perform();
+		
+		
 	}
 
 }
