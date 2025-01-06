@@ -23,8 +23,10 @@ public class GetPageHandles {
 		act.keyDown(Keys.PAGE_DOWN).perform();
 		driver.findElement(By.xpath("//a[text()='Facebook']")).click();
 		Thread.sleep(2000);
-Set<String>  child =   driver.getWindowHandles();
+
+		Set<String>  child =   driver.getWindowHandles();
 		
+
 System.out.println(child);
 	}
 
