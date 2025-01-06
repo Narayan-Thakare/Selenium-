@@ -1,12 +1,13 @@
-package actionClass;
+package popUp;
+
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class OpenTheProductInDifferentTab {
+public class GetPageHandles {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
@@ -16,14 +17,15 @@ public class OpenTheProductInDifferentTab {
 		Thread.sleep(2000);
 		driver.get("https://demowebshop.tricentis.com/");
 		Thread.sleep(2000);
+		String parentHandle = driver.getWindowHandle();
+		System.out.println(parentHandle);
 		Actions act = new Actions (driver);
+		act.keyDown(Keys.PAGE_DOWN).perform();
+		driver.findElement(By.xpath("//a[text()='Facebook']")).click();
+		Thread.sleep(2000);
+Set<String>  child =   driver.getWindowHandles();
 		
-WebElement	books =	driver.findElement(By.xpath("//a[contains(text(),'Books')]"));
-act.keyDown(Keys.CONTROL).click(books).perform();
-
-
-		System.out.println();
-		
+System.out.println(child);
 	}
 
 }
